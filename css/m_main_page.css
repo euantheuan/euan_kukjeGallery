@@ -1,0 +1,273 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url(all.min.css);
+@import url(font.css);
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
+
+
+@media screen and (max-width: 440px) {
+    body {
+        font-family: 'Helvetica Neue', "Pretendard Variable", sans-serif; 
+    }
+    .wrap {
+        max-width: 440px;
+        width: 100%;
+        margin: 0 2.5%;
+    }
+    h2 {
+        font-size: 22px;
+        margin-bottom: 24px;
+    }
+    h4 {
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 5px;
+    }
+
+/* header */
+    header {
+        max-width: 440px;
+        width: 100%;
+        height: 60px;
+        position: relative;
+    }
+    div.gnb_area h1 {
+        float: none;
+        margin: 0 auto;
+        margin: 0;
+        line-height: 60px;
+        max-width: 440px;
+        width: 100%;
+    }
+    div.gnb_area h1 a {
+        display: block;
+        margin: 0 auto;
+        width: 70%;
+        height: 60px;
+    }
+    div.gnb_area h1 a img {
+        width: 200px;
+        display: block;
+        margin: 0 auto;
+        height: 100%;
+        line-height: 60px;
+    }
+    header > a {
+        display: block;
+        font-size: 22px;
+        color: black;
+    }
+    header > a.menu {
+        position: absolute;
+        left: 20px; top: 50%;
+        transform: translateY(-50%);
+    }
+    header > a.search {
+        position: absolute;
+        right: 20px; top: 50%;
+        transform: translateY(-50%);
+    }
+    div.gnb_area {
+        height: 60px;
+    }
+    div.gnb_area ul.search_bar {
+        display: none;
+    }
+    header div.gnb_area ul.gnb {
+        display: none;
+    }
+
+/* main - main banner */
+    div.main_banner {
+        max-width: 440px;
+        width: 100%;
+        margin: 0 0 90px;
+    }
+    div.banner_swiper {
+        height: 75vh;
+        position: static;
+    }
+    div.banner_swiper div.swiper-slide div.swiper_content {
+        height: 100%;
+        position: static;
+        overflow: hidden;/* 
+        display: flex; */
+    }
+    div.banner_swiper div.swiper-slide div.swiper_content div.description {
+        position: static;
+        margin: 20px 2.5% 0;
+        order: 2;
+        word-break: keep-all;
+    }
+    div.banner_swiper div.swiper-slide div.swiper_content p {
+        margin-bottom: 8px;
+    }
+    div.banner_swiper div.swiper-slide div.swiper_content p.type {
+        font-size: 16px;
+    }
+    div.banner_swiper div.swiper-slide div.swiper_content p.where {
+        display: inline-block;
+        font-size: 18px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid black;
+    }
+    div.banner_swiper div.swiper-slide div.swiper_content p.artist {
+        font-size: 40px;
+        font-weight: 600;
+    }
+    div.banner_swiper div.swiper-slide div.swiper_content p.title,
+    div.banner_swiper div.swiper-slide div.swiper_content p.when {
+        font-size: 18px;
+    }
+    div.banner_swiper div.swiper-slide div.swiper_content figure {
+        width: 100%;
+        position: static;
+        order: 1;
+    }
+    div.banner_swiper div.swiper-slide div.swiper_content figure img {
+        height: 50vh; width: 100vw;
+    }
+    div.banner_swiper div.swiper-button-next, 
+    div.banner_swiper div.swiper-button-prev {
+        display: none;
+    }
+    div.banner_swiper:hover div.swiper-button-next, 
+    div.banner_swiper:hover div.swiper-button-prev {
+        display: none;
+    }
+
+/* main - exhibitions */
+    div.exhibitions {
+        display: none;
+    }
+    div.m_exhibitions {
+        display: block;
+        width: 150%;
+        box-sizing: border-box;
+        margin-bottom: 90px;
+    }
+    div.m_exhibitions div.swiper-slide {
+        height: auto;
+        width: 100%;
+    }
+    div.m_exhibitions div.swiper-slide div.description {
+        width: 100%;
+    }
+    div.m_exhibitions div.swiper-slide figure {
+        width: 100%;
+        height: 190px;
+        overflow: hidden;
+        margin-bottom: 15px;
+    }
+    div.m_exhibitions div.swiper-slide figure img {
+        width: 100%;
+    }
+    div.m_exhibitions div.m_exhibi_scroll p {
+        margin-bottom: 5px;
+    }
+    div.m_exhibitions div.m_exhibi_scroll p.artists {
+        display: inline-block;
+        width: 100%;
+        color: black;
+        font-size: 18px;
+        font-weight: 600;
+        padding-bottom: 7px;
+        margin-bottom: 7px;
+        border-bottom: 1px solid #000;
+    }
+    div.m_exhibitions div.m_exhibi_scroll p.exihi_type {
+        color: black;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    div.m_exhibitions div.m_exhibi_scroll p.from,
+    div.m_exhibitions div.m_exhibi_scroll p.when,
+    div.m_exhibitions div.m_exhibi_scroll p.where {
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 0;
+    }
+}
+
+/* main - news */
+    div.news {
+        margin-bottom: 90px;
+        width: 150%;
+    }
+    div.news p.sub_heading {
+        display: none;
+    }
+    div.news div.news_scroll {
+        width: 100%;
+        margin-left: 0;
+    }
+    div.news div.news_scroll div.swiper-wrapper {
+        width: 100%;
+    }
+    div.news div.swiper-slide {
+        width: 100%;
+    }
+    div.news div.swiper-slide div.slide_content {
+        width: 100%;
+    }
+    div.news div.swiper-slide div.slide_content figure {
+        width: 100%;
+        height: 190px;
+        overflow: hidden;
+        margin-bottom: 15px;
+    }
+    div.news div.swiper-slide div.slide_content figure img {
+        height: 250px;
+        transition: all 0.3s;
+    }
+    div.news div.swiper-slide div.slide_content div.description p.news_date {
+        padding-bottom: 7px;
+        margin-bottom: 7px;
+        font-size: 15px;
+        font-weight: 600;
+        color: black;
+    }
+    div.news div.swiper-slide div.slide_content div.description p.news_more {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.2;
+    }
+
+/* main - media */
+    div.media,
+    div.publications {
+        margin-bottom: 90px;
+        width: 150%;
+    }
+    div.media p.sub_heading,
+    div.publications p.sub_heading {
+        display: none;
+    }
+    div.media_scroll,
+    div.books_scroll {
+        width: 100%;
+        margin-left: 0;
+    }
+    div.media div.swiper-slide,
+    div.publications div.swiper-slide {
+        flex-shrink: 1;
+        margin-left: 0;
+        margin-right: 50px;
+    }
+    div.media_scroll div.slide_content figure {
+        margin-bottom: 15px;
+    }
+
+/* main - publications */
+    div.publications div.slide_content figure {
+        margin-bottom: 15px;
+    }
+    div.publications div.slide10 {
+        position: relative;
+    }
+
+/* footer */
+    footer div.pc_footer{
+        display: none;
+    }
+

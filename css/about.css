@@ -1,0 +1,80 @@
+@charset "utf-8";
+@import url(reset.css);
+@import url(all.min.css);
+@import url(font.css);
+@import url(header_footer.css);
+@import url('https://fonts.cdnfonts.com/css/helvetica-neue-5');
+
+body {
+    font-family: 'Helvetica Neue', "Pretendard Variable", sans-serif; 
+    margin: 0 auto;
+}
+.wrap {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+
+/* main - header */
+main {
+    margin: 90px auto;
+}
+main h2 {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+    color: black;
+    height: 90px;
+    line-height: 90px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+}
+
+/* main */
+ul.where {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul.where li figure {
+    margin-bottom: 40px;
+    height: 500px; width: 750px;
+    overflow: hidden;
+}
+ul.where li img {
+    height: 500px;
+    transition: all 0.4s;
+}
+ul.where li h3 {
+    font-size: 36px;
+    color: black;
+    margin-bottom: 15px;
+}
+ul.where li div.text_area {
+    color: black;
+}
+ul.where li div.text_area p.address {
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 500;
+}
+ul.where li div.text_area p.more {
+    font-size: 18px;
+    display: inline-block;
+}
+ul.where li div.text_area p.more:after {
+    content: '';
+    width: 0; height: 2px; 
+    display: block;
+    background-color: transparent;
+    position: relative;
+    bottom: 0px; left: 0;
+    transition: all 0.4s;
+}
+ul.where li:hover div.text_area p.more:after {
+    width: 100%;
+    background-color: black;
+}
+ul.where li:hover img {
+    scale: 1.1
+}

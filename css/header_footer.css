@@ -1,0 +1,186 @@
+/* header */
+    header > a {
+        display: none;
+    }
+    header {
+        height: 90px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+    }
+    div.gnb_area {
+        height: 90px;
+        background-color: white;
+        color: black;
+    }
+    div.gnb_area h1,
+    div.gnb_area ul.gnb {
+        float: left;
+    }
+    div.gnb_area ul.search_bar {
+        float: right;
+    }
+    div.gnb_area h1 {
+        margin-right: 60px;
+        line-height: 90px;
+    }
+    div.gnb_area h1 a img {
+        width: 250px;
+    }
+    div.gnb_area ul.gnb li,
+    div.gnb_area ul.search_bar li {
+        float: left;
+        margin-right: 30px;
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 90px;
+    }
+    div.gnb_area ul.gnb li a {
+        display: inline-block;
+    }
+    div.gnb_area ul.gnb li a:after {
+        content: '';
+        width: 0; height: 2px; 
+        display: block;
+        background-color: transparent;
+        position: relative;
+        bottom: 35px; left: 0;
+        transition: all 0.4s;
+    }
+    div.gnb_area ul.gnb li a:hover:after {
+        width: 100%;
+        background-color: black;
+    }
+    div.gnb_area ul.search_bar li form input {
+        border: none;
+        border-bottom: 3px solid black;
+        height: 40px; width: 150px;
+        outline: 0;
+    }
+    /* scroll snap */
+    /* body {
+        height: 100vh;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+    }
+    div.exhibitions,
+    div.news,
+    div.media,
+    div.publications {
+        scroll-snap-align: start;
+        scroll-margin: 90px;
+        scroll-snap-stop: normal;
+    }
+    */
+
+/* footer */
+    footer div.m_footer{
+        display: none;
+    }
+/* footer - footer01 */
+    div.footer01 {
+        background-color: #222222;
+        padding: 50px 0;
+    }
+    div.footer01 ul {
+        text-align: center;
+    }
+    div.footer01 ul li {
+        width: 800px;
+        float: left;
+    }
+    div.footer01 ul li > img {
+        margin-bottom: 15px;
+        width: 650px;
+        opacity: .3;
+    }
+    div.footer01 ul li p {
+        margin-bottom: 20px;
+        line-height: 1.5;
+    }
+    div.footer01 ul li p.where {
+        font-size: 28px;
+        font-weight: 500;
+        color: white;
+    }
+    div.footer01 ul li p.address {
+        color: white;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    div.footer01 ul li p.map {
+        width: 170px;
+        height: 35px;
+        line-height: 35px;
+        background-color: rgba(255, 255, 255, 0.3);
+        text-align: center;
+        color: black;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        transition: all 0.2s;
+    }
+    div.footer01 ul li p.map a {
+        display: inline-block;
+        width: inherit; height: inherit;
+    }
+    div.footer01 ul li p.map:hover {
+        background-color: white;
+    }
+    div.footer01 ul li p.map img {
+        position: relative;
+        top: 5px;
+    }
+    div.footer01 ul li p.time,
+    div.footer01 ul li p.contact {
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.3);
+    }
+
+/* footer02 */
+    div.footer02 {
+        background-color: #111111;
+        padding: 40px 0;
+        text-align: center;
+    }
+    ul.sns {
+        margin: 0 auto;
+        width: 600px;
+        text-align: center;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    ul.sns li {
+        margin-right: 30px;
+    }
+    ul.sns li:last-child {
+        margin: 0;
+    }
+    ul.sns li {
+        position: relative;
+    }
+    ul.sns li:nth-child(2) img,
+    ul.sns li:nth-child(3) img {
+        width: 30px;
+        margin-right: 5px;
+        position: absolute;
+        bottom: -6px; left: -40px;
+    }
+    ul.sns li:first-child img,
+    ul.sns li:last-child img {
+        width: 30px;
+        margin-right: 5px;
+        position: absolute;
+        left: -40px;
+        bottom: -2px;
+    }
+    .footer02 figure {
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    .footer02 figure img {
+        width: 200px;
+        opacity: .5;
+    }

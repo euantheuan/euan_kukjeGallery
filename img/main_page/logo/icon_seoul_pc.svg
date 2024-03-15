@@ -1,0 +1,27 @@
+<svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        width="632.5px" height="44.5px">
+    <defs>
+        <filter id="Filter_0">
+            <feFlood flood-color="rgb(255, 255, 255)" flood-opacity="1" result="floodOut" />
+            <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+            <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+        </filter>
+
+    </defs>
+    <g filter="url(#Filter_0)">
+        <path fill-rule="evenodd"  stroke="rgb(0, 0, 0)" stroke-width="1px" stroke-linecap="square" stroke-linejoin="miter" fill="none"
+              d="M362.008,42.965 L362.500,16.499 L335.500,8.499 L335.500,2.499 L306.716,12.575 L303.347,7.440 L293.326,10.429 L294.500,14.499 L261.500,14.499 C261.500,14.499 261.500,42.445 261.500,42.499 "/>
+        <path fill-rule="evenodd"  stroke="rgb(0, 0, 0)" stroke-width="1px" stroke-linecap="square" stroke-linejoin="miter" fill="none"
+              d="M294.413,14.381 L287.273,42.726 "/>
+        <path fill-rule="evenodd"  stroke="rgb(0, 0, 0)" stroke-width="1px" stroke-linecap="square" stroke-linejoin="miter" fill="none"
+              d="M307.196,12.333 L304.637,13.163 L312.758,32.429 "/>
+        <path fill-rule="evenodd"  stroke="rgb(0, 0, 0)" stroke-width="1px" stroke-linecap="square" stroke-linejoin="miter" fill="none"
+              d="M336.000,7.161 L336.000,43.006 "/>
+        <path fill-rule="evenodd"  stroke="rgb(0, 0, 0)" stroke-width="1px" stroke-linecap="square" stroke-linejoin="miter" fill="none"
+              d="M631.000,43.006 L316.000,43.006 L316.000,33.048 L308.000,33.048 L308.000,43.006 L1.000,43.006 "/>
+        <path fill-rule="evenodd"  stroke="rgb(0, 0, 0)" stroke-width="1px" stroke-linecap="square" stroke-linejoin="miter" fill="none"
+              d="M362.351,16.532 L369.000,23.091 L369.000,43.006 "/>
+    </g>
+</svg>
